@@ -1,0 +1,48 @@
+<div id="<%= dom_id post %>">
+    <table class="table table-bg-danger">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <p>
+                        <strong>Image:</strong>
+                    </p>
+                </th>
+                <th scope="col">
+                    <%= image_tag post.image, class:"image" %>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">
+                    <p>
+                        <strong>Title:</strong>
+                    </p>
+                </th>
+                <td>
+                    <%= post.title %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p>
+                        <strong>Description:</strong>
+                    </p>
+                </th>
+                <td>
+                    <%= post.description %>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
+                    <p>
+                        <strong>User:</strong>
+                    </p>
+                </th>
+                <td>
+                    <%= post.user.email %>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
